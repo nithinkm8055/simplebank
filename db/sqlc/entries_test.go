@@ -4,7 +4,6 @@ import (
 	"context"
 	"testing"
 
-	"github.com/google/uuid"
 	random "github.com/nithinkm8055/simplebank/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -45,7 +44,7 @@ func TestGetEntry(t *testing.T) {
 	})
 
 	t.Run("it=retrieves non-existent entry should fail", func(t *testing.T) {
-		getEntry, err := testQueries.GetEntry(ctx, uuid.New())
+		getEntry, err := testQueries.GetEntry(ctx, random.RandomInt(1, 1<<20))
 		require.Error(t, err)
 		require.Empty(t, getEntry)
 	})

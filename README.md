@@ -1,5 +1,3 @@
-DBDiagram: https://dbdiagram.io/d/66f86a173430cb846cefa416
-
 ## Golang Migrate
 - Create initial seq schema
 ```sh
@@ -36,5 +34,13 @@ COMMIT;
 > NB:
 In postgres, the transaction isolation level can only be changed within transaction blocks. 
 
+## DB Schema
+> DBDiagram: https://dbdiagram.io/d/66f86a173430cb846cefa416
+
+## Golang Libraries
+> https://github.com/golang-migrate/migrate
+
 ## References
-> [select for update in postgresql](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
+> [select for update in postgresql](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)  
+> [postgres locks](https://wiki.postgresql.org/wiki/Lock_Monitoring)  
+> [github.com/techschool/simplebank](https://github.com/techschool/simplebank)
